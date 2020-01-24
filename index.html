@@ -66,7 +66,9 @@
     <script type="text/javascript" src="particles/particles.js"></script>
     <script type="text/javascript" src="particles/app.js"></script>
     <script type="text/javascript">
-      document.querySelector("video").play();
+      window.addEventListener('load', (event) => {
+      document.querySelector('video').play();
+      });
     </script>
   </body>
 </html>
