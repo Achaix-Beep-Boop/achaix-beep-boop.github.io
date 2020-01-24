@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cookie"
+    />
+
+    <script type="text/javascript">
+      title = "Plague.cc ";
+      position = 0;
+      function scrolltitle() {
+        document.title =
+          title.substring(position, title.length) +
+          title.substring(0, position);
+        position++;
+        if (position > title.length) position = 0;
+        titleScroll = window.setTimeout(scrolltitle, 300);
+      }
+      scrolltitle();
+    </script>
+
+    <iframe
+      width="0"
+      height="0"
+      src="https://www.youtuberepeater.com/watch?v=VqKICL9Xr70#gsc.tab=0"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </head>
+
+  <body>
+    <div class="plague">
+      <h1>Plague.cc</h1>
+      <div id="particles-js"></div>
+
+      <div class="discord">
+        <a href="https://discord.gg/ggQj7Gv" target="_blank"
+          ><img src="assets/buttons/discord.png"
+        /></a>
+      </div>
+
+      <div class="video">
+        <video
+          autoplay
+          loop
+          muted
+          style="width: 100vw; height: 100vh; object-fit: cover;"
+        >
+          <source src="assets/background/page.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="particles/particles.js"></script>
+    <script type="text/javascript" src="particles/app.js"></script>
+    <script type="text/javascript">
+      document.querySelector("video").play();
+    </script>
+  </body>
+</html>

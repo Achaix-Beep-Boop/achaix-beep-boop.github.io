@@ -1,0 +1,72 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.plague {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.plague h1 {
+    position: relative;
+    text-align: center;
+    font-size: 6rem;
+    color: blueviolet;
+    font-family: "Cookie";
+    padding: 20px;
+    margin: 15px;
+    overflow: hidden;
+    z-index: 3;
+
+    filter: opacity(70%);
+    -webkit-filter: opacity(70%);
+}
+
+.discord {
+    position: absolute;
+    text-align: center;
+    top: 780px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+
+    filter: opacity(70%);
+    -webkit-filter: opacity(70%);
+}
+
+.discord img {
+    width: 8%;
+    height: auto;
+    z-index: 2;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+#particles-js{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}  
