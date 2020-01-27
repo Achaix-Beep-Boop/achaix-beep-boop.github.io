@@ -1,0 +1,120 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.plague {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.plague h1 {
+    position: relative;
+    text-align: center;
+    font-size: 6rem;
+    /*color: blueviolet;*/
+    font-family: "Cookie";
+    padding: 20px;
+    margin: 15px;
+    overflow: hidden;
+    z-index: 3;
+
+    filter: opacity(70%);
+    -webkit-filter: opacity(70%);
+}
+
+.discord {
+    position: absolute;
+    text-align: center;
+    top: 700px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+
+
+    filter: opacity(70%);
+    -webkit-filter: opacity(70%);
+}
+
+.discord img {
+    width: 10%;
+    height: auto;
+    z-index: 3;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+#particles-js{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}  
+
+.rainbow-text {
+  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  text-align: center;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#pattern {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    background: url("../img/dot.png");
+    background-repeat: repeat;
+}
+
+.audio-button {
+    font-size: 18px;
+    position: absolute;
+    z-index: 25;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    color: #fff;
+}
